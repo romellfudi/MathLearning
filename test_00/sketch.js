@@ -1,11 +1,3 @@
-// The Coding Train
-// Coding Challenge 122.1
-// Quick Draw
-// Part 2: https://youtu.be/EcRK6oFddPQ
-// https://thecodingtrain.com/CodingChallenges/122.2-quick-draw
-// Part 1: https://youtu.be/yLuk0twx8Hc
-// https://thecodingtrain.com/CodingChallenges/122.1-quick-draw
-
 const url = 'https://quickdrawfiles.appspot.com/drawing/cat?isAnimated=false&format=json&key='
 
 let strokeIndex = 0;
@@ -18,10 +10,6 @@ let start;
 function setup() {
   createCanvas(255, 255);
   newCat();
-  // keyInput = createInput('');
-  // keyInput.attribute('type', 'password');
-  // start = createButton('start');
-  // start.mousePressed(newCat);
 }
 
 function newCat() {
