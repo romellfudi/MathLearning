@@ -1,47 +1,47 @@
-const url = 'https://quickdrawfiles.appspot.com/drawing/cat?isAnimated=false&format=json&key='
+const url = 'https://quickdrawfiles.appspot.com/drawing/{pattern}?isAnimated=false&format=json&key='
 
 let strokeIndex = 0;
 let index = 0;
-let cat;
+let pizza;
 let prevx, prevy;
 let keyInput;
 let start;
 
 function setup() {
   createCanvas(255, 255);
-  newCat();
+  newPizza();
 }
 
-function newCat() {
-  let apiKey = 'AIzaSyCLxdiMV5-46xuFWFbdDhVoJi7DMwe-H9Q'; // keyInput.value();
-  loadJSON(url + apiKey, gotCat);
+function newPizza() {
+  let apiKey = 'AIzaSyCeQHFgyDYeCwEDhvvfrGxkif_7Y8Sc4E4'; // keyInput.value();
+  loadJSON(url.replace('{pattern}','pizza') + apiKey, gotPizza);
 }
 
 
-function gotCat(data) {
+function gotPizza(data) {
   background(220);
-  cat = data.drawing;
+  pizza = data.drawing;
 }
 
 function draw() {
-  if (cat) {
-    let x = cat[strokeIndex][0][index];
-    let y = cat[strokeIndex][1][index];
+  if (pizza) {
+    let x = pizza[strokeIndex][0][index];
+    let y = pizza[strokeIndex][1][index];
     stroke(0);
     strokeWeight(3);
     if (prevx !== undefined) {
       line(prevx, prevy, x, y);
     }
     index++;
-    if (index === cat[strokeIndex][0].length) {
+    if (index === pizza[strokeIndex][0].length) {
       strokeIndex++;
       prevx = undefined;
       prevy = undefined;
       index = 0;
-      if (strokeIndex === cat.length) {
-        cat = undefined;
+      if (strokeIndex === pizza.length) {
+        pizza = undefined;
         strokeIndex = 0;
-        setTimeout(newCat, 100);
+        setTimeout(newPizza, 500);
       }
     } else {
       prevx = x;
