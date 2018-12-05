@@ -1,3 +1,4 @@
-# project
+# Math Learning using JS
 
-[Draw gear](test_00/)
+## Draw  several objects using Google Contest's Neural net 
+Go to example : [Quick, Draw!](test_00/)
