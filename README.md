@@ -3,8 +3,17 @@
 ### By Romell Domínguez
 [![](https://raw.githubusercontent.com/romellfudi/assets/master/favicon.ico)](https://www.romellfudi.com/)
 
-## Draw  several objects using Google Contest's Neural net 
-Go to example : [Quick, Draw!](quick_draw/)
+## Draw  several objects using Google Contest's Neural net [link](quick_draw/)
+
+## Random Walking [link](walk/)
+
+## Binary Tree Vizualitation [link](binary_tree/)
+
+## Similary Score using Euclidian distance [link](similary_score/)
+
+## User similary using Nearest Neighbors [link](nearest_neighbors/)
+
+## Recommentations using data reviews [link](movie_recommendation/)
 
 
 ### License
