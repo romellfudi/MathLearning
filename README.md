@@ -15,6 +15,11 @@
 
 ## Recommentations using data reviews [link](movie_recommendation/)
 
+## Pendulum Quest [link](pendulum/)
+
+## Xor Learning Quest using JS [link](xor_js/)
+
+## Xor Learning Quest using Tensorflow [link](xor_tensorflow/)
 
 ### License
 MIT. See the LICENSE file for the copyright notice.
