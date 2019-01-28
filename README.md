@@ -21,6 +21,8 @@
 
 ## Xor Learning Quest using Tensorflow [link](xor_tensorflow/)
 
+## Fourier Series [link](fourier_series/)
+
 ### License
 MIT. See the LICENSE file for the copyright notice.
 
