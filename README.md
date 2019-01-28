@@ -23,6 +23,8 @@
 
 ## Xor Learning Quest using JS [link](xor_js/)
 
+# Deep Learning
+
 ## Xor Learning Quest using Tensorflow [link](xor_tensorflow/)
 
 ## Draw  several objects using Google Contest's Neural net [link](quick_draw/)
