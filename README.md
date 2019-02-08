@@ -29,7 +29,9 @@
 
 ## Draw  several objects using Google Contest's Neural net [link](quick_draw/)
 
-## Pre-tranier Mobile net [link](mobilenet/)
+## Classification Class between two classes [link](camera_classifier/)
+
+## Pre-tranier Mobile Net [link](mobilenet/)
 
 ### License
 MIT. See the LICENSE file for the copyright notice.
