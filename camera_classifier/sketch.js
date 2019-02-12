@@ -2,9 +2,11 @@ let mobilenet;
 let classifier;
 let video;
 let label = 'test';
-let ukeButton;
-let whistleButton;
+let class_a;
+let class_b;
 let trainButton;
+let labelDescription;
+let numASamples=0,numBSamples=0;
 
 function modelReady() {
   console.log('Model is ready!!!');
@@ -16,6 +18,7 @@ function videoReady() {
 
 function whileTraining(loss) {
   if (loss == null) {
+    label.html('Model is Ready!');
     console.log('Training Complete');
     classifier.classify(gotResults);
   } else {
@@ -34,6 +37,7 @@ function gotResults(error, result) {
 }
 
 function setup() {
+  labelDescription = createP('Usage:: Each class buttom store a class sample, when you capture all pics need it, press train button');
   createCanvas(320, 270);
   video = createCapture(VIDEO);
   video.hide();
@@ -41,18 +45,27 @@ function setup() {
   mobilenet = ml5.featureExtractor('MobileNet', modelReady);
   classifier = mobilenet.classification(video, videoReady);
 
-  ukeButton = createButton('CLASS A');
-  ukeButton.mousePressed(function() {
+  class_a = createButton('CLASS A ('+numASamples+')');
+  class_a.position(10, height + 80);
+  class_a.mousePressed(function() {
+    numASamples++;
+    class_a.html('CLASS A ('+numASamples+')');
     classifier.addImage('CLASS A');
   });
 
-  whistleButton = createButton('CLASS B');
-  whistleButton.mousePressed(function() {
+  class_b = createButton('CLASS B ('+numASamples+')');
+  class_b.position(class_a.width+10, height + 80);
+  class_b.mousePressed(function() {
+    numBSamples++;
+    class_b.html('CLASS B ('+numBSamples+')');
     classifier.addImage('CLASS B');
   });
 
   trainButton = createButton('train');
+  trainButton.position(class_b.width+class_b.x+10, height + 80);
   trainButton.mousePressed(function() {
+    class_a.html('CLASS A ('+numASamples+')');
+    class_b.html('CLASS B ('+numBSamples+')');
     classifier.train(whileTraining);
   });
 
