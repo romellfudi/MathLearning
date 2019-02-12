@@ -1,7 +1,7 @@
 let mobilenet;
 let classifier;
 let video;
-let label = 'test';
+let label = 'Please add samples for each class';
 let class_a;
 let class_b;
 let trainButton;
