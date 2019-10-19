@@ -33,6 +33,10 @@
 
 ## Pre-tranier Mobile Net [link](mobilenet/)
 
+## PosNet Model [link](posnet/)
+
+## PosNet Model - Biclassification [link](posnet_classification/)
+
 ### License
 MIT. See the LICENSE file for the copyright notice.
 
