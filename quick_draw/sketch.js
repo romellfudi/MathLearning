@@ -54,7 +54,7 @@ function draw() {
       if (strokeIndex === pizza.length) {
         pizza = undefined;
         strokeIndex = 0;
-        setTimeout(newPizza, 5000);
+        setTimeout(newPizza, 1500);
       }
     } else {
       prevx = x;
