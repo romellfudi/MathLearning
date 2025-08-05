@@ -1,5 +1,7 @@
 # Math Learning using JS
 
+![banner](https://github.com/user-attachments/assets/e06b02e9-f56c-43e7-bfec-bfaf349b2c99)
+
 ### By Romell Domínguez
 [![](https://raw.githubusercontent.com/romellfudi/assets/master/favicon.ico)](https://www.romellfudi.com/)
 
